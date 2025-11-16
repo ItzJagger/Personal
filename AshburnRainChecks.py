@@ -562,15 +562,81 @@ def timeframesection():
 
             fivetoclosebutton = tk.Button(mainframe, text="After 5PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("5-close"))
             fivetoclosebutton.pack(pady=20)
-        else:
-            pass
+
+        elif appstate["whatday"] =="weekend/holiday":
+            before10button = tk.Button(mainframe, text="Before 10 AM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("before10"))
+            before10button.pack(pady=20)
+
+            tento11button = tk.Button(mainframe, text="10AM - 10:50AM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("10-11"))
+            tento11button.pack(pady=20)
+
+            elevento3button = tk.Button(mainframe, text="11AM - 2:50PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("11-3"))
+            elevento3button.pack(pady=20)
+
+            threeto4button = tk.Button(mainframe, text="3PM - 3:50PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("3-4"))
+            threeto4button.pack(pady=20)
+
+            fourto5button = tk.Button(mainframe, text="4PM - 4:50PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("4-5"))
+            fourto5button.pack(pady=20)
+
+            fivetoclosebutton = tk.Button(mainframe, text="After 5PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("5-close"))
+            fivetoclosebutton.pack(pady=20)
+
     else:
         if appstate["whatday"] == "weekday":
-            pass
+            before10button = tk.Button(mainframe, text="Before 10 AM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("before10"))
+            before10button.pack(pady=20)
+
+            tento1button = tk.Button(mainframe, text="10AM - 12:50PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("10-1"))
+            tento1button.pack(pady=20)
+
+            oneto2button = tk.Button(mainframe, text="1PM - 1:50PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("1-2"))
+            oneto2button.pack(pady=20)
+
+            twoto3button = tk.Button(mainframe, text="2PM - 2:50PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("2-3"))
+            twoto3button.pack(pady=20)
+
+            threetoclosebutton = tk.Button(mainframe, text="After 3PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("3-close"))
+            threetoclosebutton.pack(pady=20)
+
+
         elif appstate["whatday"] == "friday":
-            pass
-        else:
-            pass
+            before10button = tk.Button(mainframe, text="Before 10 AM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("before10"))
+            before10button.pack(pady=20)
+
+            tento11button = tk.Button(mainframe, text="10AM - 10:50AM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("10-11"))
+            tento11button.pack(pady=20)
+
+            elevento1button = tk.Button(mainframe, text="11AM - 12:50PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("11-1"))
+            elevento1button.pack(pady=20)
+
+            oneto2button = tk.Button(mainframe, text="1PM - 1:50PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("1-2"))
+            oneto2button.pack(pady=20)
+
+            twoto3button = tk.Button(mainframe, text="2PM - 2:50PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("2-3"))
+            twoto3button.pack(pady=20)
+
+            threetoclosebutton = tk.Button(mainframe, text="After 3PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("3-close"))
+            threetoclosebutton.pack(pady=20)
+
+        elif appstate["whatday"] =="weekend/holiday":
+            before10button = tk.Button(mainframe, text="Before 10 AM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("before10"))
+            before10button.pack(pady=20)
+
+            tento11button = tk.Button(mainframe, text="10AM - 10:50AM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("10-11"))
+            tento11button.pack(pady=20)
+
+            elevento1button = tk.Button(mainframe, text="11AM - 12:50PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("11-1"))
+            elevento1button.pack(pady=20)
+
+            oneto2button = tk.Button(mainframe, text="1PM - 1:50PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("1-2"))
+            oneto2button.pack(pady=20)
+
+            twoto3button = tk.Button(mainframe, text="2PM - 2:50PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("2-3"))
+            twoto3button.pack(pady=20)
+
+            threetoclosebutton = tk.Button(mainframe, text="After 3PM", font=("Arial", 20), height=2, width=20, command=lambda: dayselect("3-close"))
+            threetoclosebutton.pack(pady=20)
 
 
 seasonsection()
